@@ -8,3 +8,9 @@ function destructivelyUpdateObjectWithKeyAndValue(recipes, prop2, value) {
   recipes.prop2 = 2
   return recipes
 }
+
+function deleteFromObjectByKey(recipes, prop) {
+  var newRecipes = Object.assign({}, recipes)
+  delete newRecipes.prop
+  return newRecipes 
+}
